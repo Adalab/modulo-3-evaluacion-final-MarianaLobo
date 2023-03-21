@@ -1,5 +1,6 @@
-const getCharacters = () => {
-    return fetch('https://hp-api.onrender.com/api/characters/house/gryffindor')
+
+const getCharacters = (filterHouse) => {
+    return fetch(`https://hp-api.onrender.com/api/characters/house/${filterHouse}`)
         .then((response) => response.json())
         .then((data) => {
             const getData = data.map((oneCharacter) => {
@@ -16,4 +17,4 @@ const getCharacters = () => {
             return getData;
         });
 };
-export default getCharacters();
+export default getCharacters;

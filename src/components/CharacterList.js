@@ -1,8 +1,8 @@
 import Character from "./Character";
 
-function CharacterList({ filterCharacterName}) {
+function CharacterList({ filterCharacter}) {
 
-    const renderCharacter = filterCharacterName.map((oneCharacter) => {
+    const renderCharacter = filterCharacter.map((oneCharacter) => {
         return <Character oneCharacter={oneCharacter} key={oneCharacter.id} />;
     });
   return <ul className="characterList">{renderCharacter}</ul>;

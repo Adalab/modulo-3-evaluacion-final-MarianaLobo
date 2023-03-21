@@ -17,32 +17,39 @@ function App() {
   /* VARIABLES ESTADO (DATOS) */
   const [characters, setCharacters] = useState([]);
   const [filterName, setFilterName] = useState('');
+  const [filterHouse, setFilterHouse] = useState('Gryffindor')
 
   /* EFECTOS (código cuando carga la página) */
   useEffect(() => {
-    getCharacters.then((getData) => {
+    getCharacters(filterHouse).then((getData) => {
       setCharacters(getData);
    })
-  }, []);
+  }, [filterHouse]);
 
   /* FUNCIONES HANDLER */
   const SearchName = (value) => {
     setFilterName(value);
+  };
 
-
-  }
+  const SearchHouse = (value) => {
+    setFilterHouse(value)
+  };
 
   /* FUNCIONES Y VARIABLES AUXILIARES PARA PINTAR EL HTML */
-  const filterCharacterName = () => {
-    return characters.filter((oneCharacter) => oneCharacter.name.toLocaleLowerCase().includes(filterName.toLocaleLowerCase()))
-} 
+  const filterCharacter = () => {
+    return characters
+      .filter((oneCharacter) => oneCharacter.name.toLocaleLowerCase().includes(filterName.toLocaleLowerCase()))
+      .filter((oneCharacter) => {
+        return filterHouse === 'Gryffindor' ? true : oneCharacter.house === filterHouse;
+      })
+  };
 
   /* HTML */
   return <div className="App">
     <Header />
     <main>
-      <Filters SearchName={SearchName} filterName={filterName} />
-      <CharacterList filterCharacterName={filterCharacterName()} />
+      <Filters SearchName={SearchName} filterName={filterName} SearchHouse={SearchHouse} />
+      <CharacterList filterCharacter={filterCharacter()} />
     </main>
   </div>;
 }
