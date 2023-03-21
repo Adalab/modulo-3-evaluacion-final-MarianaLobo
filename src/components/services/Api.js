@@ -11,6 +11,8 @@ const getCharacters = (filterHouse) => {
                     house: oneCharacter.house,
                     alive: oneCharacter.alive,
                     id: oneCharacter.id,
+                    gender: oneCharacter.id,
+                    altName: oneCharacter.alternate_names,
                 };
                 
             });
