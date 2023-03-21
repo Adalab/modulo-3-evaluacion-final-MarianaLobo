@@ -1,9 +1,13 @@
 import FilterHouses from "./FilterHouses";
 import FilterName from "./FilterName";
 
-function Filters({ SearchName, filterName, SearchHouse}) {
+function Filters({ SearchName, filterName, SearchHouse }) {
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    };
+    
     return (
-    <form className= 'form'>
+    <form className= 'form' onSubmit={handleSubmit}>
             <FilterName SearchName={SearchName} filterName={filterName}/>
             <FilterHouses SearchHouse={SearchHouse} />
     </form>
