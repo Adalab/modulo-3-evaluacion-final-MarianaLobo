@@ -41,7 +41,7 @@ function App() {
  
   const msgError = () => {
     if (filterCharacter.length === 0) {
-      return <p>El personaje no existe</p>
+      return <p className='msg-error'>Ups....parece que el personaje no existe!!!</p>
     }
   };
   const filterCharacter = characters

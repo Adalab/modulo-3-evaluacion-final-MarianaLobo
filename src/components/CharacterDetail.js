@@ -18,7 +18,10 @@ function CharacterDetail({ characterFind }) {
     } else {
         return <img className= 'house-img' src={rav} alt="" />
     }
-};
+  };
+  
+
+  
   return (
     <div className="character-detail">
       <img
@@ -28,7 +31,7 @@ function CharacterDetail({ characterFind }) {
       ></img>
       <div className="info-detail">
         <p className="text-detail">Nombre: {characterFind.name}</p>
-        <p className="text-detail"> Especie: {characterFind.species}</p>
+        <p className="text-detail"> Especie: {characterFind.species} </p>
         <p className="text-detail">casa: {characterFind.house}</p>{characterFind.alive === true ? <p className="text-detail">Estado: Alive</p> : <p className="text-detail">Estado: Dead</p>}
         <p className="text-detail">Género: {characterFind.gender}</p>
         <p className="text-detail">Nombre alternativo: {characterFind.altName}</p>
