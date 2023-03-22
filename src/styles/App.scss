@@ -3,9 +3,20 @@
     
     background-image: url(../images/colourful-night-sky-with-stars-nebula.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
+   background-attachment: fixed;
+   
+ 
  
     
     
     
 }
+
+.main {
+   display: flex; 
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+

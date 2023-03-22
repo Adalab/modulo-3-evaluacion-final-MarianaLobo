@@ -2,7 +2,7 @@
 
 // - De React
 import { useEffect, useState } from "react";
-import { matchPath, Route, Routes, useLocation, Link } from "react-router-dom";
+import { matchPath, Route, Routes, useLocation} from "react-router-dom";
 // - Nuestros
 import CharacterList from "./CharacterList";
 import Filters from "./form/Filters";
@@ -38,6 +38,7 @@ function App() {
   };
 
   /* FUNCIONES Y VARIABLES AUXILIARES PARA PINTAR EL HTML */
+ 
   const msgError = () => {
     if (filterCharacter.length === 0) {
       return <p>El personaje no existe</p>
@@ -61,12 +62,11 @@ function App() {
   const characterFind = filterCharacter.find(
     (eachCharacter) => eachCharacter.id === charactertId
   );
-
   /* HTML */
   return (
     <div className="App">
       <Header />
-      <main>
+      <main className='main'>
         <Routes>
           <Route
             path="/"
@@ -84,8 +84,10 @@ function App() {
           
           <Route path="/character/:id" element={<CharacterDetail characterFind={characterFind} />} />
         </Routes>
+        
       </main>
-      <Link to="/">Volver</Link>
+     
+      
     </div>
   );
 }

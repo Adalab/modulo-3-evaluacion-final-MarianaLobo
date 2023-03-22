@@ -23,7 +23,7 @@
     width: 100px;
     height: 130px;
     border-radius: 3px;
-    border: 2px solid rgb(222, 205, 18);
+    border: 2px solid rgb(112, 216, 216);
     @media all and(min-width:768px) {
         width: 150px;
         height: 200px;
@@ -46,20 +46,20 @@
 }
 
 .character-name {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Charm', cursive;
     color: rgb(207, 201, 201);
     font-size: 12px;
     @media all and(min-width:768px) {
-       font-size: 20px;
+       font-size: 15px;
     }
 }
 
 .character-text {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Charm', cursive;
     color: rgb(207, 201, 201);
-    font-size: 12px;
+    font-size: 30px;
     @media all and(min-width:768px) {
-        font-size: 20px;
+        font-size: 15px;
      }
 }
 

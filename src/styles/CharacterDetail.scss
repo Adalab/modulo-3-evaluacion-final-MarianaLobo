@@ -1,0 +1,59 @@
+.character-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(42, 39, 39, 0.6);
+  box-shadow: 0.3em 0.6em 0.4em rgb(1, 1, 2);
+  border-radius: 5px;
+  width: 35vw;
+  padding: 8px;
+  margin-bottom: 300px;
+  gap: 5px;
+}
+
+.house-img {
+  width: 120px;
+  height: 140px;
+}
+
+.info-detail {
+  margin-left: 20px;
+  margin-top: 30px;
+  line-height: 23px;
+}
+
+.text-detail {
+  font-family: "Charm", cursive;
+  color: rgb(112, 216, 216);
+  font-size: 15px;
+}
+.return {
+  text-decoration: none;
+  color: rgb(239, 247, 246);
+  width: 80px;
+  height: 30px;
+  border-radius: 30px;
+  text-align: center;
+  padding-top: 10px;
+  background-color: rgba(16, 220, 192, 0.44);
+  box-shadow: 0 0 3px 2px rgba(15, 108, 80, 0.749);
+}
+.return:hover {
+  animation-name: color2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  @keyframes color2 {
+    from {
+      background-color: aqua;
+    }
+    to {
+      background-color: rgba(255, 255, 255, 0);
+    }
+    from {
+      color: wheat;
+    }
+    to {
+      color: aqua;
+    }
+  }
+}

@@ -7,7 +7,7 @@ function Character({ oneCharacter }) {
     
     <Link className='link' to={`/character/${oneCharacter.id}`}>
       <li className="character-card" key={oneCharacter.id}>
-        <div class='character-info'>
+        <div className='character-info'>
         <h3 className="character-name">Nombre: {oneCharacter.name}</h3>
           <p className="character-text">Especie: {oneCharacter.species}</p>
           <p className="character-text">Casa: {oneCharacter.house} </p>
