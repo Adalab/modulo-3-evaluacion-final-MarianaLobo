@@ -1,19 +1,25 @@
 import imgDefault from "../images/imgDefault.png";
 import { Link } from "react-router-dom";
+import '../styles/Character.scss';
 
 function Character({ oneCharacter }) {
   return (
-    <Link to={`/character/${oneCharacter.id}`}>
+    
+    <Link className='link' to={`/character/${oneCharacter.id}`}>
       <li className="character-card" key={oneCharacter.id}>
-        <h3 className="character-name">{oneCharacter.name}</h3>
+        <div class='character-info'>
+        <h3 className="character-name">Nombre: {oneCharacter.name}</h3>
+          <p className="character-text">Especie: {oneCharacter.species}</p>
+          <p className="character-text">Casa: {oneCharacter.house} </p>
+        </div>
         <img
           className="character-img"
           src={oneCharacter.image ? oneCharacter.image : imgDefault}
           alt="imagen"
         ></img>
-        <p className="character-species">{oneCharacter.species}</p>
       </li>
-    </Link>
+      </Link>
+      
   );
 }
 

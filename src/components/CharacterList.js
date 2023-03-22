@@ -1,4 +1,5 @@
 import Character from "./Character";
+import '../styles/CharacterList.scss';
 
 function CharacterList({ filterCharacter, msgError }) {
 

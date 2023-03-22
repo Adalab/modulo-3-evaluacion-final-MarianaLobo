@@ -3,7 +3,8 @@ function FilterName({ SearchName, filterName }) {
         SearchName(ev.target.value)
     }
     return ( 
-    <label className='label-name' htmlFor='name'>Nombre del personaje
+        <>
+    <label className='label' htmlFor='name'>Buscar por nombre</label>
             <input
                 className='input-name'
                 placeholder='Ej. Harry Potter'
@@ -11,7 +12,7 @@ function FilterName({ SearchName, filterName }) {
                 value={filterName}
                 type="text"
                 name="name"/>
-    </label>
+            </>
     );
 }
 

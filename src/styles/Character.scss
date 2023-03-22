@@ -1,0 +1,67 @@
+.character-card {
+   
+    background-color: rgba(42, 39, 39, 0.6);
+    box-shadow:  0.3em 0.6em 0.4em rgb(1, 1, 2);
+    border-radius: 9px;
+    width: 250px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 25px;
+    cursor:url(../images/magic.svg), pointer;
+    @media all and(min-width:768px) {
+        width: 350px;
+        padding: 10px;
+    gap: 25px;
+    margin-left: 10px;
+    }
+    
+}
+
+.character-img {
+    width: 100px;
+    height: 130px;
+    border-radius: 3px;
+    border: 2px solid rgb(222, 205, 18);
+    @media all and(min-width:768px) {
+        width: 150px;
+        height: 200px;
+    }
+}
+
+.character-info {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    @media all and(min-width:768px) {
+        line-height: 30px;
+    }
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+.character-name {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(207, 201, 201);
+    font-size: 12px;
+    @media all and(min-width:768px) {
+       font-size: 20px;
+    }
+}
+
+.character-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(207, 201, 201);
+    font-size: 12px;
+    @media all and(min-width:768px) {
+        font-size: 20px;
+     }
+}
+
+
+    

@@ -1,5 +1,6 @@
 import FilterHouses from "./FilterHouses";
 import FilterName from "./FilterName";
+import '../../styles/Form.scss';
 
 function Filters({ SearchName, filterName, SearchHouse }) {
     const handleSubmit = (event) => {

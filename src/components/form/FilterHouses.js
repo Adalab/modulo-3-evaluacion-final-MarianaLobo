@@ -1,15 +1,17 @@
-function FilterHouses({SearchHouse}) {
+import '../../styles/Form.scss';
+
+function FilterHouses({ SearchHouse }) {
     const handleInputHouse = (ev) => {
         const value = ev.target.value;
         SearchHouse(value);
     }
   return (
     <>
-      <label className="" htmlFor="house">
-        Casa:
+      <label className="label" htmlFor="house">
+        Buscar por casa
       </label>
       <select
-        className=""
+        className="select"
         name="house"
         id="house"
         onChange={handleInputHouse}
