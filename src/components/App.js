@@ -38,12 +38,17 @@ function App() {
   };
 
   /* FUNCIONES Y VARIABLES AUXILIARES PARA PINTAR EL HTML */
+  const msgError = () => {
+    if (filterCharacter.length === 0) {
+      return <p>El personaje no existe</p>
+    }
+  };
   const filterCharacter = characters
-      .filter((oneCharacter) => {
-       return oneCharacter.name
-          .toLocaleLowerCase()
-          .includes(filterName.toLocaleLowerCase())
-        })
+    .filter((oneCharacter) => {
+      return oneCharacter.name
+        .toLocaleLowerCase()
+       .includes(filterName.toLocaleLowerCase())
+    })
       .filter((oneCharacter) => {
         return filterHouse === "Gryffindor"
           ? true
@@ -72,7 +77,7 @@ function App() {
                   filterName={filterName}
                   SearchHouse={SearchHouse}
                 />
-                <CharacterList filterCharacter={filterCharacter} />
+                <CharacterList filterCharacter={filterCharacter} msgError={msgError()} />
               </>
             }
           ></Route>
