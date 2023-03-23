@@ -1,30 +1,20 @@
 /* Aquí van tus estilos */
-*{
-   box-sizing: border-box;
-   padding: 0;
-   margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 .App {
-   
-    background-image: url(../images/colourful-night-sky-with-stars-nebula.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
- background-attachment: fixed;
-   height: 100%;
-   
-   
-   
- 
- 
-    
-    
-    
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
 }
 
 .main {
-   display: flex; 
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-

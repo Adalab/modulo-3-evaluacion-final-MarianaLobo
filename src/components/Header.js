@@ -1,5 +1,5 @@
 import "../styles/Header.scss";
-import title from "../images/pngwing.png";
+import title from "../images/header.png";
 
 function Header() {
   return (

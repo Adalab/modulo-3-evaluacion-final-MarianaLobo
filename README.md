@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Proyecto Evaluación Modulo 3: Buscador de personajes de Harry Potter :crystal_ball:
 
-## Available Scripts
 
-In the project directory, you can run:
+El propósito de este proyecto es el de poner en práctica todos los conocimientos adquiridos en el módulo  del **Bootcamp de Adalab de Programación Web**.
 
-### `npm start`
+Se ha desarrollado una página web con un buscador de personajes de Harry Potter. Se pueden filtrar los personajes por nombre y por casa. Al hacer click en un personaje, su información aparece a pantalla completa.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Comenzando :rocket:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> **NOTA:** Este proyecto utiliza React Starter Kit.
 
-### `npm test`
+1. **Instalación.** :gear:
+   - Clonar repositorio desde la terminal.
+   ```bash
+   git clone https://github.com/Adalab/modulo-3-evaluacion-final-MarianaLobo.git.
+   ```
+   - Instalar **React Starter Kit** desde la terminal.
+   ```bash
+   npm install
+   ```
+   - Ejecutar React Starter Kit desde la terminal.
+   ```bash
+   npm start.
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Tecnologías utilizadas :wrench:
+1. React
+1. HTML5
+1. CSS3
+1. Javascript
+1. SASS
+1. GULP
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Estructura de carpetas del proyecto :file_folder:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+├── public
+│   └── index.html
+├─ src
+|   ├─ components
+|   |  ├─ form
+|   |  | ├─ FilterHouses.js
+|   |  | └─ FilterName.scss
+|   |  ├─ App.js
+|   |  ├─ Character.js
+|   |  ├─ CharacterDetails.js
+|   |  ├─ CharacterList.js
+|   |  └─ Header.scss
+|   ├─ images
+|   ├─ services 
+|   |  └─ Api.js
+|   ├─ styles
+|   |  ├─ App.scss
+|   |  ├─ Character.scss
+|   |  ├─ CharacterDetails.scss
+|   |  ├─ CharacterList.scss
+|   |  ├─ Form.scss
+|   └─ └─ Header.scss
+└─  
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Autores :pencil2:
 
-### `npm run eject`
+Mariana Lobo / [MarianaLobo](https://github.com/MarianaLobo)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Licencia :balance_scale:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto está bajo licencia **MIT License**

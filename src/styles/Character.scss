@@ -1,67 +1,59 @@
 .character-card {
-   
-    background-color: rgba(42, 39, 39, 0.6);
-    box-shadow:  0.3em 0.6em 0.4em rgb(1, 1, 2);
-    border-radius: 9px;
-    width: 220px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    padding: 10px;
-    gap: 10px;
-    cursor:url(../images/magic.svg), pointer;
-    @media all and(min-width:768px) {
+  background-color: rgba(42, 39, 39, 0.6);
+  box-shadow: 0.3em 0.6em 0.4em rgb(1, 1, 2);
+  border-radius: 9px;
+  width: 220px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding: 10px;
+  gap: 10px;
+  cursor: url(../images/magic.svg), pointer;
+  @media all and(min-width:768px) {
     width: 300px;
     gap: 20px;
-    }
-    
-    
+  }
 }
 
 .character-img {
-    margin-top: 10px;
-    width: 80px;
-    height: 100px;
-    border-radius: 3px;
-    border: 2px solid rgb(112, 216, 216);
-    @media all and(min-width:768px) {
-        width: 100px;
-        height: 150px;
-        margin-left: 10px;
-    }
+  margin-top: 10px;
+  width: 80px;
+  height: 100px;
+  border-radius: 3px;
+  border: 2px solid rgb(112, 216, 216);
+  @media all and(min-width:768px) {
+    width: 100px;
+    height: 150px;
+    margin-left: 10px;
+  }
 }
 
 .character-info {
-    margin-top: 10px;
-    @media all and(min-width:768px) {
-        margin-top: 15px;
-        line-height: 20px;
-    }
-
+  margin-top: 10px;
+  @media all and(min-width:768px) {
+    margin-top: 15px;
+    line-height: 20px;
+  }
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .character-name {
-    font-family: 'Charm', cursive;
-    color: rgb(207, 201, 201);
-    font-size: 12px;
-    @media all and(min-width:768px) {
-       font-size: 18px;
-    }
+  font-family: "Charm", cursive;
+  color: rgb(207, 201, 201);
+  font-size: 12px;
+  @media all and(min-width:768px) {
+    font-size: 18px;
+  }
 }
 
 .character-text {
-    font-family: 'Charm', cursive;
-    color: rgb(207, 201, 201);
-    font-size: 12px;
-    @media all and(min-width:768px) {
-        font-size: 15px;
-     }
-     
+  font-family: "Charm", cursive;
+  color: rgb(207, 201, 201);
+  font-size: 12px;
+  @media all and(min-width:768px) {
+    font-size: 15px;
+  }
 }
-
-
-    

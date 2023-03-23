@@ -1,6 +1,7 @@
 import FilterHouses from "./FilterHouses";
 import FilterName from "./FilterName";
 import '../../styles/Form.scss';
+import PropTypes from 'prop-types';
 
 function Filters({ SearchName, filterName, SearchHouse }) {
     const handleSubmit = (event) => {
@@ -13,6 +14,12 @@ function Filters({ SearchName, filterName, SearchHouse }) {
             <FilterHouses SearchHouse={SearchHouse} />
     </form>
     );
-}
+};
+
+Filters.propTypes = {
+    SearchName: PropTypes.func,
+    filterName: PropTypes.string,
+    SearchHouse:PropTypes.func,
+  };
 
 export default Filters;

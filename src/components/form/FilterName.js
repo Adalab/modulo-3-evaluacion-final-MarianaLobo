@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function FilterName({ SearchName, filterName }) {
     const HandleInputname = (ev) => {
         SearchName(ev.target.value)
@@ -14,6 +16,11 @@ function FilterName({ SearchName, filterName }) {
                 name="name"/>
             </>
     );
-}
+};
+
+FilterName.propTypes = {
+    SearchName: PropTypes.func,
+    filterName: PropTypes.string,
+  };
 
 export default FilterName;

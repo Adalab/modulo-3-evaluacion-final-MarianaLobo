@@ -1,5 +1,5 @@
 import '../../styles/Form.scss';
-
+import PropTypes from 'prop-types';
 function FilterHouses({ SearchHouse }) {
     const handleInputHouse = (ev) => {
         const value = ev.target.value;
@@ -23,6 +23,11 @@ function FilterHouses({ SearchHouse }) {
       </select>
     </>
   );
-}
+};
+
+
+FilterHouses.propTypes = {
+  SearchHouse:PropTypes.func,
+};
 
 export default FilterHouses;

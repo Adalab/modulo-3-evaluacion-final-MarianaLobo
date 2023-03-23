@@ -1,59 +1,55 @@
 .form {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    margin-left: 30px;
-    @media all and(min-width:768px){
-        margin-left: 0;
-        gap: 15px;
-        flex-direction: row;
-       
-    }
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 30px;
+  @media all and(min-width:768px) {
+    margin-left: 0;
+    gap: 15px;
+    flex-direction: row;
+  }
 }
 .label {
-    color: rgb(112, 216, 216);
-    font-size: 15px;
-    font-weight: bold;
-    text-shadow: 0.2em 0.2em 0.3em black;
-    font-family: 'Charm', cursive;
-    @media all and(min-width:768px){
-        font-size: 20px;
-    }
-    @media all and(min-width:1024px){
-        font-size: 25px;
-    }
+  color: rgb(112, 216, 216);
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0.2em 0.2em 0.3em black;
+  font-family: "Charm", cursive;
+  @media all and(min-width:768px) {
+    font-size: 20px;
+  }
+  @media all and(min-width:1024px) {
+    font-size: 25px;
+  }
 }
 
 .input-name {
-    
-    width: 150px;
+  width: 150px;
+  height: 20px;
+  border-radius: 4px;
+  border: none;
+  opacity: 70%;
+  @media all and(min-width:768px) {
+    width: 200px;
     height: 20px;
-    border-radius: 4px;
-    border: none;
-    opacity: 70%;
-    @media all and(min-width:768px){
-        width: 200px;
-        height: 20px;
-        margin-top: 7px;
-    }
-    @media all and(min-width:1024px){
-        margin-top: 13px;
-    }
+    margin-top: 7px;
+  }
+  @media all and(min-width:1024px) {
+    margin-top: 13px;
+  }
 }
 
 .select {
-    
-    width: 150px;
-    height: 24px;
-    border-radius: 4px;
-    opacity: 70%;
-    @media all and(min-width:768px){
-        margin-top: 5px;
-    }
-    @media all and(min-width:1024px){
-        margin-top: 10px;
-    }
-    
+  width: 150px;
+  height: 24px;
+  border-radius: 4px;
+  opacity: 70%;
+  @media all and(min-width:768px) {
+    margin-top: 5px;
+  }
+  @media all and(min-width:1024px) {
+    margin-top: 10px;
+  }
 }
