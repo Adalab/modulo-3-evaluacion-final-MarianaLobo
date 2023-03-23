@@ -1,10 +1,16 @@
 /* Aquí van tus estilos */
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
 .App {
-    
+   
     background-image: url(../images/colourful-night-sky-with-stars-nebula.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-   background-attachment: fixed;
+ background-attachment: fixed;
+   height: 100%;
    
    
    
