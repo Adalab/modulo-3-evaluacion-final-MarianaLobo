@@ -4,6 +4,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
   gap: 15px;
+  margin-bottom: 400px;
   @media all and(min-width:768px) {
     grid-template-columns: 1fr 1fr;
     margin-top: 60px;
